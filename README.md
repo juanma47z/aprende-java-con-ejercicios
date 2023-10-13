@@ -1,8 +1,4 @@
 # aprende-java-con-ejercicios
 
 Modulo 1:
-Hola Mundo
-Colorear texto
-Sangría
-Caracteres especiales
-Salida formateada
+Hola Mundo, colorear texto, sangría, caracteres especiales, salida formateada.
