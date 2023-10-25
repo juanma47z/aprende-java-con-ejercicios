@@ -8,3 +8,6 @@ Variables, definicion y tipos, tipos primitivos, operadores aritmeticos, asignac
 
 Modulo 3:
 Lectura de texto, lectura de números, la clase "Scanner"
+
+Modulo 4:
+Sentencia condicional, sentencia if, operadores de comparacion, operadores logicos, sentencia switch.
