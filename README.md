@@ -11,3 +11,6 @@ Lectura de texto, lectura de números, la clase "Scanner"
 
 Modulo 4:
 Sentencia condicional, sentencia if, operadores de comparacion, operadores logicos, sentencia switch.
+
+Modulo 5:
+Bucles, for, while, do-while.
