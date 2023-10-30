@@ -14,3 +14,6 @@ Sentencia condicional, sentencia if, operadores de comparacion, operadores logic
 
 Modulo 5:
 Bucles, for, while, do-while.
+
+Modulo 6:
+Números aleatorios, generación de números aleatorios con y sin decimales, generación de pálabras de forma aleatoria de un conjunto dado.
