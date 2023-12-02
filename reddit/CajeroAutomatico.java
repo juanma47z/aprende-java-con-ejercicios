@@ -1,6 +1,7 @@
 
 package newpackage;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 
@@ -22,12 +23,14 @@ public class CajeroAutomatico {
   static Scanner read = new Scanner(System.in);
   static double saldoUsuario;
   
+     
   public static void main(String[] args) {
     
     try {
     System.out.println("Bienvenido");
     
-    saldoUsuario = 1000;
+    saldoUsuario = 1000.00;
+    
     
     int opcionUsuario = 0;
     
@@ -74,7 +77,7 @@ public class CajeroAutomatico {
 
     //Validar que el ingreso de dinero sea positivo.
     if(saldoIngresado > 0){
-      saldoUsuario = saldoUsuario + saldoIngresado;
+      saldoUsuario += saldoIngresado;
       mostrarDinero();
     }else{
       System.out.println("El saldo debe ser positivo");
@@ -86,7 +89,6 @@ public class CajeroAutomatico {
     
     double saldoRetirar = read.nextDouble();
     
-    
     //Validar que el retiro no supere el saldo actual.
     if(saldoRetirar > saldoUsuario){
       System.out.println("El saldo a retirar supera su saldo actual.");
@@ -95,15 +97,18 @@ public class CajeroAutomatico {
     }if(saldoRetirar < 0){
       System.out.println("El saldo a retirar debe ser un numero positivo."); 
     }else{
-      saldoUsuario = saldoUsuario - saldoRetirar;
+      saldoUsuario -= saldoRetirar;
       mostrarDinero();
     }
     
   }
   
   public static void mostrarDinero(){
-    System.out.println("El saldo total es de " + saldoUsuario);
-    System.out.println("\n"); 
+    
+    //https://www.delftstack.com/es/howto/java/how-to-round-a-double-to-two-decimal-places-in-java/#redondea-un-double-a-dos-decimales-usando-el-decimalformat
+    DecimalFormat df = new DecimalFormat("###.##");
+   
+    System.out.println("El saldo total es de " + df.format(saldoUsuario) + "\n");
   }
 }
 
